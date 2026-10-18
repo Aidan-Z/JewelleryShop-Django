@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages', #for onetime notificaitons to user
     'django.contrib.staticfiles', #for serving statics like img/css etc
     #defaults ^^^^
+    'webstore',
 ]
 
 MIDDLEWARE = [
