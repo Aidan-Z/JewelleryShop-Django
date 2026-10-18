@@ -16,7 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from webstore import views  
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.pagina_principala, name='home'),
+    path('info', views.pagina_info, name='info'),
 ]
