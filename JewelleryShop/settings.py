@@ -31,14 +31,15 @@ ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '127.0.0.1,localhost').split(',')
 
 
 # Application definition
-
+#each app provides functioanlity -> but also can create own apps here
 INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
+    'django.contrib.admin', #admin interfac eto manage data
+    'django.contrib.auth', #auth users
     'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
+    'django.contrib.sessions', #not really used (can delete)
+    'django.contrib.messages', #for onetime notificaitons to user
+    'django.contrib.staticfiles', #for serving statics like img/css etc
+    #defaults ^^^^
 ]
 
 MIDDLEWARE = [
