@@ -13,5 +13,5 @@ def pagina_principala(request):
 
 def pagina_info(request):
     #loads HTML template for info page
-    return render(request, 'info.html') #RENDERS an HTML page
+    return render(request, 'webstore/info.html') #RENDERS an HTML page
 
