@@ -9,8 +9,9 @@ def pagina_principala(request):
         Platforma le va permite utilizatorilor să își creeze un cont, să exploreze 
         colecțiile disponibile și să plaseze comenzi sau să inițieze retururi.
         """
-    return HttpResponse(descriere)
+    return HttpResponse(descriere) #returns simple plaintext http response
 
 def pagina_info(request):
     #loads HTML template for info page
-    return render(request, 'info.html')
+    return render(request, 'info.html') #RENDERS an HTML page
+

@@ -5,6 +5,6 @@ from . import views #ref view func in current path
 #define special var: this is what django looks for:
 #array of URL pattern objects
 urlpatterns = [
-    path('', views.pagina_principala, name='home'),
+    path('', views.pagina_principala, name='home'), #default endpoint / website (localhost in this case)
     path('info/', views.pagina_info, name='info'),
 ]
