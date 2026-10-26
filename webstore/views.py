@@ -1,4 +1,4 @@
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseNotAllowed
 from django.shortcuts import render
 
 def pagina_principala(request):
@@ -14,4 +14,26 @@ def pagina_principala(request):
 def pagina_info(request):
     #loads HTML template for info page
     return render(request, 'webstore/info.html') #RENDERS an HTML page
+
+
+
+
+
+
+# testing / learn funcs
+def test_params(request):
+    return HttpResponse(f"query in URL: {request.GET.get('q')}")
+
+def post_exp(request):
+    if request.method == "POST":
+        name = request.POST.get('name')
+        age = request.POST.get('age')
+        return HttpResponse(f"{name}, {age}")
+    else:
+        return HttpResponseNotAllowed('POST')
+
+
+
+def submit_exp(request):
+    return render(request, 'webstore/submit_expl.html')
 

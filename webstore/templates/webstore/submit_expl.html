@@ -1,0 +1,7 @@
+<form method="POST" action="{% url 'post_ex' %}"> <!-- action links this rendered html page to a post function defined in views -->
+    {% csrf_token %}
+    <input type="text" name="name" placeholder="Name"> <!-- grabs data requried for post func -->
+    <input type="text" name="age" placeholder="Age">
+
+    <button type="submit">send POST request</button>
+</form>
