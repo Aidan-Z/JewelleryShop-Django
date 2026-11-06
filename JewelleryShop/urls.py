@@ -18,7 +18,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-#main URLS (config)
+#main URLS (config) -> all others inside
 urlpatterns = [
     path('admin/', admin.site.urls),
     # path('webstore/', include('webstore.urls')), #check if breaks without this [doesnt?]
