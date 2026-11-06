@@ -1,0 +1,6 @@
+<form method="POST" action="{% url 'post_ex' %}"> <!-- action links this rendered html page to a post function defined in views -->
+    {% csrf_token %} <!-- MUST INCLUDE (cross site token)-->
+    {{ form.as_p }} <!-- double curly brackets to access context-->
+
+    <button type="submit">send POST request</button>
+</form>
